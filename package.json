@@ -1,0 +1,39 @@
+{
+  "name": "playwright-js-playground",
+  "version": "1.0.0",
+  "description": "Playground for Playwright testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "show-report": "playwright show-report",
+    "lint": "biome check .",
+    "lint:fix": "biome check --apply .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "oxlint": "oxlint .",
+    "ci": "biome ci ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clayit/playwright-js-playground.git"
+  },
+  "keywords": [],
+  "author": "githubdmn",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/clayit/playwright-js-playground/issues"
+  },
+  "homepage": "https://github.com/clayit/playwright-js-playground#readme",
+  "dependencies": {
+    "@playwright/test": "^1.58.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.15",
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
+  }
+}
